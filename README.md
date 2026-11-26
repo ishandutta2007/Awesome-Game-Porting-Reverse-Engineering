@@ -7,7 +7,7 @@
 <p align="center">
   <a href="https://github.com/ishandutta2007/Awesome-Awesome-Awesome"><img src="https://img.shields.io/badge/Awesome-%E2%9C%94-blueviolet?style=flat-square&logo=github" alt="Awesome"/></a>
   <a href="https://discord.gg/jc4xtF58Ve"><img src="https://img.shields.io/badge/Discord-5865F2?style=for-the-badge&logo=discord&logoColor=white" alt="Discord" /></a>
-  <a href="https://github.com/ishandutta2007/Awesome-Game-Porting-Reverse-Engineering/stargazers"><img src="https://img.shields.io/github/stars/ishandutta2007/Awesome-Game-Porting-Reverse-Engineering?style=flat-square&logo=github&color=gold" alt="GitHub stars" /></a>
+  <a href="https://github.com/ishandutta2007/Awesome-Game-Porting-Reverse-Engineering/stargazers"><img src="https://img.shields.io/github/stars/ishandutta2007/Awesome-Game-Porting-Reverse-Engineering?style=flat-square&logo=github&color=gold" alt="GitHub_Stars" /></a>
   <a href="https://github.com/ishandutta2007/Awesome-Game-Porting-Reverse-Engineering/network/members"><img src="https://img.shields.io/github/forks/ishandutta2007/Awesome-Game-Porting-Reverse-Engineering?style=flat-square&logo=github&color=blue" alt="GitHub forks" /></a>
   <a href="https://github.com/ishandutta2007"><img alt="GitHub followers" src="https://img.shields.io/github/followers/ishandutta2007?label=Follow" /></a>
 </p>
@@ -61,9 +61,9 @@ The global Cloud Gaming, Game Preservation & Cross-Platform Porting Tools market
 
 ## 💻 Open-Source Reverse Engineering, Porting & Recompilation Projects
 
-*Open-source GitHub repositories sorted in descending order of GitHub stars. Each star badge links directly to the project's stargazers page.*
+*Open-source GitHub repositories sorted in descending order of GitHub_Stars. Each Stars_Badge links directly to the project's stargazers page.*
 
-| 📦 Repository & Stars | 🏷️ License | 🎯 Category | 📖 Description |
+| 📦 Repository & GitHub_Stars | 🏷️ License | 🎯 Category | 📖 Description |
 | :--- | :--- | :--- | :--- |
 | **[Ghidra](https://github.com/NationalSecurityAgency/ghidra)**<br><a href="https://github.com/NationalSecurityAgency/ghidra/stargazers"><img src="https://img.shields.io/github/stars/NationalSecurityAgency/ghidra?style=social&color=white" alt="Ghidra Stars"/></a> | Apache-2.0 | Reverse Engineering Suite | National Security Agency (NSA) flagship software reverse engineering framework with decompiler, disassembly analyzer, and scripting interface. |
 | **[ImHex](https://github.com/WerWolv/ImHex)**<br><a href="https://github.com/WerWolv/ImHex/stargazers"><img src="https://img.shields.io/github/stars/WerWolv/ImHex?style=social&color=white" alt="ImHex Stars"/></a> | GPL-2.0 | Binary & Hex Editor | Modern interactive hex editor tailored for reverse engineers, binary analysts, and security researchers with custom pattern language (Pattern Language). |
