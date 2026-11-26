@@ -1,0 +1,196 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 420" width="100%" height="100%">
+  <defs>
+    <!-- Background Gradients -->
+    <linearGradient id="bg-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0a0e17" />
+      <stop offset="50%" stop-color="#0d1527" />
+      <stop offset="100%" stop-color="#05070d" />
+    </linearGradient>
+
+    <linearGradient id="primary-grad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#00f2fe" />
+      <stop offset="50%" stop-color="#4facfe" />
+      <stop offset="100%" stop-color="#9b51e0" />
+    </linearGradient>
+
+    <linearGradient id="accent-cyan" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#00f2fe" stop-opacity="0.8" />
+      <stop offset="100%" stop-color="#4facfe" stop-opacity="0.2" />
+    </linearGradient>
+
+    <linearGradient id="accent-purple" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#f355da" stop-opacity="0.7" />
+      <stop offset="100%" stop-color="#7000ff" stop-opacity="0.1" />
+    </linearGradient>
+
+    <linearGradient id="pill-bg" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#141e33" stop-opacity="0.9" />
+      <stop offset="100%" stop-color="#1b2a47" stop-opacity="0.9" />
+    </linearGradient>
+
+    <!-- Glowing Filters -->
+    <filter id="glow-cyan" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="8" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+
+    <filter id="glow-orb" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur stdDeviation="30" result="blur" />
+    </filter>
+
+    <!-- Grid Pattern -->
+    <pattern id="cyber-grid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#1f2d4d" stroke-width="0.8" stroke-opacity="0.4" />
+    </pattern>
+  </defs>
+
+  <style>
+    .title-text {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+      font-weight: 900;
+      font-size: 44px;
+      letter-spacing: -0.5px;
+    }
+    .subtitle-text {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+      font-weight: 500;
+      font-size: 19px;
+      fill: #94a3b8;
+    }
+    .pill-label {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+      font-weight: 600;
+      font-size: 13px;
+      fill: #e2e8f0;
+    }
+    .status-text {
+      font-family: 'SFMono-Regular', Consolas, 'Liberation Mono', Menlo, Courier, monospace;
+      font-size: 12px;
+      fill: #38bdf8;
+    }
+    
+    /* Background Dynamic Animations */
+    @keyframes floatOrb1 {
+      0% { transform: translate(0px, 0px) scale(1); }
+      50% { transform: translate(60px, 30px) scale(1.15); }
+      100% { transform: translate(0px, 0px) scale(1); }
+    }
+    @keyframes floatOrb2 {
+      0% { transform: translate(0px, 0px) scale(1.1); }
+      50% { transform: translate(-50px, -25px) scale(0.9); }
+      100% { transform: translate(0px, 0px) scale(1.1); }
+    }
+    @keyframes pulseBeam {
+      0%, 100% { opacity: 0.2; stroke-dashoffset: 0; }
+      50% { opacity: 0.7; stroke-dashoffset: 40; }
+    }
+    @keyframes radarScan {
+      0% { transform: rotate(0deg); }
+      100% { transform: rotate(360deg); }
+    }
+    @keyframes blinkDot {
+      0%, 100% { opacity: 1; }
+      50% { opacity: 0.3; }
+    }
+
+    .orb-1 { animation: floatOrb1 10s ease-in-out infinite; }
+    .orb-2 { animation: floatOrb2 12s ease-in-out infinite; }
+    .stream-beam {
+      stroke-dasharray: 8 16;
+      animation: pulseBeam 4s linear infinite;
+    }
+    .pulse-dot {
+      animation: blinkDot 2s ease-in-out infinite;
+    }
+  </style>
+
+  <!-- Deep Background -->
+  <rect width="1200" height="420" fill="url(#bg-grad)" rx="16" />
+
+  <!-- Animated Ambient Light Orbs (Background layer) -->
+  <g filter="url(#glow-orb)">
+    <circle cx="200" cy="100" r="140" fill="#00f2fe" opacity="0.18" class="orb-1" />
+    <circle cx="1020" cy="300" r="160" fill="#a855f7" opacity="0.18" class="orb-2" />
+    <circle cx="700" cy="80" r="100" fill="#3b82f6" opacity="0.15" class="orb-1" />
+  </g>
+
+  <!-- Cyber Grid Matrix -->
+  <rect width="1200" height="420" fill="url(#cyber-grid)" rx="16" />
+
+  <!-- Decorative Porting & Translation Circuit Nodes (Background Layer) -->
+  <g opacity="0.5">
+    <path d="M 80 80 L 260 80 L 320 140" fill="none" stroke="#38bdf8" stroke-width="1.5" class="stream-beam" />
+    <circle cx="80" cy="80" r="3" fill="#38bdf8" />
+    <circle cx="260" cy="80" r="3" fill="#38bdf8" />
+    <circle cx="320" cy="140" r="4" fill="#00f2fe" class="pulse-dot" />
+
+    <path d="M 880 340 L 980 340 L 1060 260 L 1140 260" fill="none" stroke="#c084fc" stroke-width="1.5" class="stream-beam" />
+    <circle cx="880" cy="340" r="3" fill="#c084fc" />
+    <circle cx="980" cy="340" r="3" fill="#c084fc" />
+    <circle cx="1060" cy="260" r="3" fill="#c084fc" />
+    <circle cx="1140" cy="260" r="4" fill="#f43f5e" class="pulse-dot" />
+  </g>
+
+  <!-- Main Foreground Content (Remains crisp, legible, and unhidden) -->
+  
+  <!-- System Status Pill -->
+  <g transform="translate(60, 48)">
+    <rect width="280" height="32" rx="16" fill="#0f172a" stroke="#1e293b" stroke-width="1.2" />
+    <circle cx="18" cy="16" r="4.5" fill="#22c55e" class="pulse-dot" />
+    <text x="32" y="21" class="status-text">SYSTEM ACTIVE // RECOMPILER SUITE</text>
+  </g>
+
+  <!-- Title & Subtitle -->
+  <g transform="translate(60, 140)">
+    <!-- Main Title with Gradient -->
+    <text x="0" y="0" class="title-text" fill="url(#primary-grad)" filter="url(#glow-cyan)">
+      Game Porting &amp; Reverse Engineering
+    </text>
+    
+    <!-- Subtitle / Tagline -->
+    <text x="0" y="44" class="subtitle-text">
+      Curated Ecosystem of Native Ports, Binary Recompilers, Graphics Layers &amp; Decompilation
+    </text>
+    
+    <!-- Architecture Scope -->
+    <text x="0" y="74" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="14" fill="#64748b">
+      x86_64 • ARM64 • MIPS • PowerPC • DirectX-to-Vulkan • Metal Translation • Ghidra • Proton • DXVK
+    </text>
+  </g>
+
+  <!-- Tech Focus Interactive Pills (Horizontal Row) -->
+  <g transform="translate(60, 290)">
+    <!-- Pill 1: Static Recompilation -->
+    <g transform="translate(0, 0)">
+      <rect width="200" height="42" rx="10" fill="url(#pill-bg)" stroke="#38bdf8" stroke-width="1.2" stroke-opacity="0.6" />
+      <text x="18" y="26" class="pill-label">⚡ Static Recompilation</text>
+    </g>
+
+    <!-- Pill 2: Binary Decompilation -->
+    <g transform="translate(216, 0)">
+      <rect width="205" height="42" rx="10" fill="url(#pill-bg)" stroke="#a855f7" stroke-width="1.2" stroke-opacity="0.6" />
+      <text x="18" y="26" class="pill-label">🔬 Binary Decompilation</text>
+    </g>
+
+    <!-- Pill 3: Graphics Translation -->
+    <g transform="translate(437, 0)">
+      <rect width="195" height="42" rx="10" fill="url(#pill-bg)" stroke="#3b82f6" stroke-width="1.2" stroke-opacity="0.6" />
+      <text x="18" y="26" class="pill-label">🎮 DirectX &amp; Vulkan</text>
+    </g>
+
+    <!-- Pill 4: Native Console-to-PC -->
+    <g transform="translate(648, 0)">
+      <rect width="215" height="42" rx="10" fill="url(#pill-bg)" stroke="#10b981" stroke-width="1.2" stroke-opacity="0.6" />
+      <text x="18" y="26" class="pill-label">🕹️ Native Console-to-PC</text>
+    </g>
+
+    <!-- Pill 5: Cloud Gaming & Preservation -->
+    <g transform="translate(879, 0)">
+      <rect width="195" height="42" rx="10" fill="url(#pill-bg)" stroke="#f59e0b" stroke-width="1.2" stroke-opacity="0.6" />
+      <text x="18" y="26" class="pill-label">☁️ Cloud Preservation</text>
+    </g>
+  </g>
+
+  <!-- Outer Card Stroke Highlight -->
+  <rect width="1198" height="418" x="1" y="1" fill="none" stroke="#334155" stroke-width="1.5" stroke-opacity="0.5" rx="16" />
+</svg>
